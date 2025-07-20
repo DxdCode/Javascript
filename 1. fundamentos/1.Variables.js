@@ -1,2 +1,5 @@
-const hola = "Hola Mundo";
-console.log(hola)
+const hola = "Hola Kakis";
+
+const adios = "Adios Kakis";
+
+console.log(adios)
