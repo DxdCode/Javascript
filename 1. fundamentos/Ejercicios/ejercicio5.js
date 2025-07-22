@@ -1,6 +1,18 @@
 // 1️⃣ Función declarada calcularAreaRectangulo(base, altura)
 // Calcula el área de un rectángulo. Si alguno no es número o es negativo, retorna "Datos inválidos".
 
+function calcularAreaRectangulo(base, altura){
+    if(typeof base === 'number' &&  base > 0 && typeof altura === 'number' && altura > 0 ){
+        return base * altura
+
+    }else{
+        return 'Datos invalidos'
+    }
+}
+console.log(
+calcularAreaRectangulo('dsds',20)
+    
+)
 // 2️⃣ Función expresada esNumeroPrimo(num)
 // Determina si un número es primo (retorna true o false). Usa bucles y condiciones.
 
