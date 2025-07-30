@@ -17,3 +17,4 @@ console.log(sumar(3, 4))
 // Cuando necesitas una función corta 
 const multiplicar = (a, b) => a * b
 console.log(multiplicar(2, 5))
+
