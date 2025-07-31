@@ -67,7 +67,7 @@ const nuevo = JSON.parse(json);       // { nombre: "David", edad: 30 }
 console.log(json);
 console.log(nuevo);
 
-// ✅ Métodos útiles de Object
+// ✅ dos útiles de Object
 
 const persona = {
   nombre: "David",
