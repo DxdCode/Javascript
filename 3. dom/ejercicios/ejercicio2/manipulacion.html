@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .activo{
+        background-color: #0099ff;
+        color: white;
+        width: 10em;
+        height: 10em;
+        font-family: "roboto", sans-serif;
+    }
+    .oculto{
+        display: none;
+    }
+    .resaltado{
+        background-color: #ff0000;
+        color: white;
+        width: 10em;
+        height: 10em;
+        font-family: "roboto", sans-serif;
+    }
+    .activo:hover{
+        background-color: #301733;
+        color: black;
+    }
+</style>
+<body>
+    <h2 id="titulo">Hola</h2>
+    <a href="*">Ingresa aqui</a>
+    <div class="caja oculto">hola</div>
+    <h3>Obtener los valores</h3>
+    <p id="producto" data-id="123" data-precio="15.5">Aqui se obtine valores</p>
+    <h3>Se copia del padre al hijo</h3>
+    <div class="item">Cuadros de los cuadros</div>
+
+
+
+    <script src="./2.Manipulacion.js"></script>
+</body>
+</html>

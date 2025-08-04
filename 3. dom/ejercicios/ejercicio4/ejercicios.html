@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <title>Eventos DOM Avanzados</title>
+  <style>
+    #lista li {
+      cursor: pointer;
+      margin: 0.4em 0;
+      padding: 0.3em;
+      border: 1px solid #ccc;
+    }
+    .activo {
+      background-color: #ffd54f;
+    }
+    #mensaje {
+      margin-top: 1em;
+      color: darkred;
+      font-weight: bold;
+    }
+    .span{
+        padding: 1em 0;
+    }
+  </style>
+</head>
+<body>
+
+  <h1 id="titulo">Domina Eventos Avanzados</h1>
+  <div class="span"></div>
+  <button id="btnToggle">Alternar estilo</button>
+  <div class="span"></div>
+  <input type="text" id="inputFiltro" placeholder="Filtra la lista..." />
+  <div class="span"></div>
+  <form id="formRegistro">
+    <input type="text" name="usuario" placeholder="Usuario" required />
+    <input type="email" name="email" placeholder="Email" required />
+    <button type="submit">Registrar</button>
+  </form>
+  <div class="span"></div>
+  <ul id="lista">
+    <li data-id="1">Elemento uno</li>
+    <li data-id="2">Elemento dos</li>
+    <li data-id="3">Elemento tres</li>
+    <li data-id="4">Elemento cuatro</li>
+  </ul>
+  <div class="span"></div>
+  <a href="https://openai.com" id="enlace" target="_blank">Visitar OpenAI</a>
+  <div class="span"></div>
+  <p id="mensaje"></p>
+  <script src="ejercicio.js"></script>
+</body>
+</html>

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <title>Eventos en el DOM</title>
+</head>
+<body>
+  <button id="btn">Clic aquí</button>
+  <input type="text" id="inputTexto" />
+  <form id="formulario">
+    <input type="text" name="nombre" />
+    <button type="submit">Enviar</button>
+  </form>
+  <ul id="lista">
+    <li>Elemento 1</li>
+    <li>Elemento 2</li>
+  </ul>
+  <script>
+    // CLICK
+    document.getElementById("btn").addEventListener("click", () => {
+      console.log("Clic en el botón");
+    });
+
+    // DBLCLICK
+    document.getElementById("btn").addEventListener("dblclick", () => {
+      console.log("Doble clic en el botón");
+    });
+
+    // MOUSEOVER
+    document.getElementById("btn").addEventListener("mouseover", () => {
+      console.log("Mouse encima del botón");
+    });
+
+    // MOUSEOUT
+    document.getElementById("btn").addEventListener("mouseout", () => {
+      console.log("Mouse salió del botón");
+    });
+
+    // KEYDOWN
+    document.getElementById("inputTexto").addEventListener("keydown", (e) => {
+      console.log("Tecla presionada:", e.key);
+    });
+
+    // KEYUP
+    document.getElementById("inputTexto").addEventListener("keyup", (e) => {
+      console.log("Tecla soltada:", e.key);
+    });
+
+    // INPUT
+    document.getElementById("inputTexto").addEventListener("input", (e) => {
+      console.log("Valor escribiéndose:", e.target.value);
+    });
+
+    // CHANGE
+    document.getElementById("inputTexto").addEventListener("change", (e) => {
+      console.log("Valor cambiado:", e.target.value);
+    });
+
+    // SUBMIT
+    document.getElementById("formulario").addEventListener("submit", (e) => {
+      e.preventDefault(); // Evita que se recargue
+      console.log("Formulario detenido");
+    });
+
+    // DELEGACIÓN (para stopPropagation)
+    document.getElementById("lista").addEventListener("click", function (e) {
+      console.log("Click en lista");
+    });
+
+    document.querySelectorAll("#lista li").forEach((li) => {
+      li.addEventListener("click", function (e) {
+        e.stopPropagation(); // Detiene que el evento suba al <ul>
+        console.log("Click en item:", e.target.textContent);
+      });
+    });
+
+    // LOAD
+    window.addEventListener("load", () => {
+      console.log("Toda la página ha cargado (incluye imágenes, etc)");
+    });
+
+    // DOMContentLoaded
+    document.addEventListener("DOMContentLoaded", () => {
+      console.log("El DOM ya está listo");
+    });
+  </script>
+</body>
+</html>

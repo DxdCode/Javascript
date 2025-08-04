@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Manipulación DOM</title>
+    <style>
+        .alerta.oculto {
+            display: none;
+        }
+
+        .activo {
+            background-color: limegreen;
+        }
+
+        .tarjeta {
+            border: 1px solid #ccc;
+            padding: 10px;
+            margin: 5px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1 id="titulo">Título original</h1>
+    <div class="contenido">
+        <p>Contenido inicial</p>
+    </div>
+    <a href="#">Enlace original</a>
+    <br>
+    <br>
+
+    <img style="width: 8em;"
+        src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Unofficial_JavaScript_logo_2.svg/800px-Unofficial_JavaScript_logo_2.svg.png"
+        alt="Imagen de prueba">
+    <br>
+    <div class="caja">Caja de ejemplo</div>
+    <div class="alerta oculto">¡Alerta invisible!</div>
+    <button id="boton">Activar</button>
+    <br>
+    <div id="rol" data-rol="admin">Usuario con rol</div>
+    <br>
+    <div class="tarjeta">Tarjeta original</div>
+
+    <script src="ejercicio.js"></script>
+</body>
+
+</html>
